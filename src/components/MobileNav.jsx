@@ -66,6 +66,7 @@ const MobileNav = () => {
                 {expandedItems.includes("services") ? <FaMinus /> : <FaPlus />}
               </button>
             </div>
+
             <AnimatePresence>
               {expandedItems.includes("services") && (
                 <motion.div
@@ -75,19 +76,17 @@ const MobileNav = () => {
                   transition={{ duration: 0.2 }}
                   className="overflow-hidden bg-black"
                 >
-                  {dropdownContent.services.map((item, index) => (
-                    <Link
-                      key={index}
-                      to="#"
-                      className="block py-3 px-8 text-white text-base border-l-2 border-[#99141E] ml-4"
-                    >
-                      {item}
-                    </Link>
-                  ))}
+                  <Link to="/core-strengths" className="block py-3 px-8 text-white text-base border-l-2 border-[#99141E] ml-4">
+                    Core Strengths
+                  </Link>
+                  <Link to="/PPP" className="block py-3 px-8 text-white text-base border-l-2 border-[#99141E] ml-4">
+                    PPP
+                  </Link>
                 </motion.div>
               )}
             </AnimatePresence>
           </li>
+
           <li className="border-b border-gray-800">
             <Link to="/management" className="block py-4 px-4 text-white text-base">
               Management
