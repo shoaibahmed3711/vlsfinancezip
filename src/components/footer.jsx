@@ -16,7 +16,7 @@ const Footer = () => {
                         <div className="bg-[#1a1a1a] relative pb-6">
                             <div className="absolute top-[-8px] left-0 right-0 h-2 bg-[#e31e24]" />
                             <div className="p-10">
-                                <h3 className="text-[16px] text-white font-bold mb-5">About VLS Finance</h3>
+                                <h3 className="text-[16px] text-white font-bold mb-5">About VLS Finances</h3>
                                 <p className="text-gray-200 text-sm leading-relaxed">
                                     VLS Finance is guided by a strong and professional Board of Directors comprising Bankers, Chartered
                                     Accountants and Bureaucrats. It has an excellent blend of the old world wisdom, derived from its
@@ -62,8 +62,8 @@ const Footer = () => {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <FaEnvelope className="text-gray-400" />
-                                    <a href="mailto:vls@vlsfinance.com" className="text-white underline hover:text-gray-300">
-                                        vls@vlsfinance.com
+                                    <a href="mailto:vls@vlsfinances.com" className="text-white underline hover:text-gray-300">
+                                        vls@vlsfinances.com
                                     </a>
                                 </div>
                             </div>

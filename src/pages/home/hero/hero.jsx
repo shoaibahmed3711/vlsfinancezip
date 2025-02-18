@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // Image URLs (replace with actual URLs)
 const images = [
@@ -54,16 +55,18 @@ const HeroSection = () => {
     setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
       setAnimateBackground(false);
-    }, 500);
+    }, 300); // Reduce the delay for faster response
   };
-
+  
   const prevSlide = () => {
     setAnimateBackground(true);
     setTimeout(() => {
       setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
       setAnimateBackground(false);
-    }, 500);
+    }, 300);
   };
+  
+  
 
   return (
     <div className="relative text-white overflow-hidden">
@@ -94,14 +97,16 @@ const HeroSection = () => {
           >
             <h1 className="text-3xl md:text-5xl font-bold mb-5">{slides[currentSlide].title}</h1>
             <p className="text-lg md:text-2xl mb-8">{slides[currentSlide].subtitle}</p>
-            <motion.button className="bg-black rounded-full text-white px-4 py-2 flex items-center gap-2">
-              <motion.p
-                className='flex items-center gap-2'
-                whileHover={{ scale: [1, 1.1, 1], transition: { repeat: 2, duration: 0.2 } }}
-              >
-                <span className='text-sm font-bold'>CONTACT US</span>
-                <FaArrowRight />
-              </motion.p>
+            <motion.button className="bg-black rounded-full text-white px-8 py-2 flex items-center gap-2">
+              <Link to='/contact' >
+                <motion.p
+                  className='flex items-center gap-2'
+                  whileHover={{ scale: [1, 1.1, 1], transition: { repeat: 2, duration: 0.2 } }}
+                >
+                  <span className='text-sm font-bold'>CONTACT US</span>
+                  <FaArrowRight />
+                </motion.p>
+              </Link>
             </motion.button>
           </motion.div>
 
@@ -113,7 +118,7 @@ const HeroSection = () => {
           >
             {isHovered && (
               <motion.div
-                className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between z-20 left-0 right-0 px-8"
+                className="absolute top-1/2 hidden -translate-y-1/2 w-full md:flex justify-between z-20 left-0 right-0 px-8"
               >
                 {/* Left Arrow - Slides in from left and exits to left */}
                 <motion.button
@@ -191,7 +196,7 @@ const HeroSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div >
   );
 };
 

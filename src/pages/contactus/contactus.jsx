@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSectionContact from '../services/core-strength/hero-section/hero-section'
+import HeroSectionContact from './hero-section/hero-section'
 import ContactDetails from './details/details'
 const Contactus = () => {
   return (

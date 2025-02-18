@@ -1,11 +1,11 @@
 import { IoMdHome } from "react-icons/io";
 
-const HeroSectionCoreStrength = () => {
+const HeroSectionContact = () => {
     return (
       <div className="bg-red-700 text-white p-6 md:p-12 relative">
         <div className="container-fluid mx-auto flex flex-col md:flex-row justify-between items-center">
           {/* Page Title */}
-          <h1 className="text-2xl font-bold">Core Strength</h1>
+          <h1 className="text-2xl font-bold">Contact us</h1>
   
           {/* Breadcrumb Navigation */}
           <nav className="text-sm mt-4 md:mt-0">
@@ -22,7 +22,7 @@ const HeroSectionCoreStrength = () => {
                 </a>
               <li className="text-white">›</li>
 
-              <li className="text-white font-semibold">Core Strength</li>
+              <li className="text-white font-semibold">Contact us</li>
             </ul>
           </nav>
         </div>
@@ -30,5 +30,5 @@ const HeroSectionCoreStrength = () => {
     );
   };
   
-  export default HeroSectionCoreStrength;
+  export default HeroSectionContact;
   

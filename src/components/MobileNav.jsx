@@ -40,7 +40,7 @@ const MobileNav = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.2 }}
-      className="fixed inset-x-0 top-16 bg-black z-50 md:hidden"
+      className="fixed inset-x-0 top-[110px] bg-black z-50 md:hidden"
     >
       <nav className="w-full">
         <ul className="space-y-0">

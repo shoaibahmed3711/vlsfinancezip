@@ -199,8 +199,8 @@ const AboutDetails = () => {
                                 <span className="bg-red-600 text-white p-2 rounded-full">
                                     <CiMail />
                                 </span>
-                                <a href="mailto:vls@vlsfinance.com" className="text-red-600 hover:underline">
-                                    vls@vlsfinance.com
+                                <a href="mailto:vls@vlsfinances.com" className="text-red-600 hover:underline">
+                                    vls@vlsfinances.com
                                 </a>
                             </div>
                             <div className="flex items-center space-x-3">
@@ -208,7 +208,7 @@ const AboutDetails = () => {
                                     <IoHelpBuoyOutline />
                                 </span>
                                 <a href="mailto:hconsul@vlsfinance.com" className="text-red-600 hover:underline">
-                                    hconsul@vlsfinance.com
+                                    hconsul@vlsfinances.com
                                 </a>
                             </div>
                             <div className="flex items-center space-x-3">

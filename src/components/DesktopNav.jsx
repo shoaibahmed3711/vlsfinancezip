@@ -53,7 +53,7 @@ const DesktopNav = () => {
   }
 
   return (
-    <nav className="hidden md:block text-[24px] font-bold ml-[350px]">
+    <nav className="hidden md:block text-[24px] font-bold ml-[200px]">
       <ul className="flex flex-wrap items-center gap-5">
         <li>
           <Link to="/" className="text-white font-bold text-sm hover:text-gray-200 py-5 inline-block whitespace-nowrap">
@@ -86,7 +86,7 @@ const DesktopNav = () => {
                   to="/PPP"
                   className="block p-2 text-gray-500 hover:text-[#99141E] text-sm"
                 >
-                 <span> PPP</span>
+                 <span>PPP - Private Placement Program/Trade Profit Fund (TPF)</span>
                 </Link>
               </div>
             </div>

@@ -31,7 +31,7 @@ export default function ContactDetails() {
                         </div>
                         <div className="flex items-center gap-2">
                             <Mail className="w-10 h-10 text-[#C10007]" />
-                            <p className="text-sm text-[#C10007]">vls@vlsfinance.com</p>
+                            <p className="text-sm text-[#C10007]">vls@vlsfinances.com</p>
                         </div>
                     </div>
                 </div>
