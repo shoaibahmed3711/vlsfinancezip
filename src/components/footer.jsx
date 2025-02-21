@@ -11,13 +11,13 @@ const Footer = () => {
 
             <section className='bg-black'>
                 <div className=''>
-                    <div className=" container-fluid grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+                    <div className=" container-fluid grid grid-cols-1 lg:grid-cols-2 mb-12 items-center gap-8">
                         {/* About section */}
-                        <div className="bg-[#1a1a1a] relative pb-6">
+                        <div className="bg-[#1a1a1a] relative pb-6 w-full">
                             <div className="absolute top-[-8px] left-0 right-0 h-2 bg-[#e31e24]" />
-                            <div className="p-10">
+                            <div className="p-12">
                                 <h3 className="text-[16px] text-white font-bold mb-5">About VLS Finances</h3>
-                                <p className="text-gray-200 text-sm leading-relaxed">
+                                <p className="text-gray-200 text-md leading-relaxed">
                                     VLS Finance is guided by a strong and professional Board of Directors comprising Bankers, Chartered
                                     Accountants and Bureaucrats. It has an excellent blend of the old world wisdom, derived from its
                                     conservative policy makers at the board level, combined with a modern approach at the operational level,
@@ -26,48 +26,50 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Important Links */}
-                        <div className="md:pl-8">
-                            <h3 className=" font-bold mb-5">Important Links</h3>
-                            <nav className="flex flex-col space-y-3 ">
-                                <h1 className='text-white font-bold'>Important Links</h1>
-                                {['Home','KYC', 'Policy', 'Payment to VLS', 'Contact Us'].map((item, index) => (
-                                    <div key={index} className="flex items-center gap-2 group">
-                                        <span className="text-[#e31e24] opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all">›</span>
-                                        <a href="#" className="text-white border-b-[1px] pb-2 w-full border-gray-800 font-bold hover:text-gray-300 transition-transform group-hover:translate-x-1">
-                                            {item}
+                        <section className='flex items-center gap-10 lg:flex-row flex-col'>
+                            {/* Important Links */}
+                            <div className="md:pl-8 sm:min-w-[350px] w-full">
+                                <h3 className=" font-bold mb-5">Important Links</h3>
+                                <nav className="flex flex-col space-y-3 ">
+                                    <h1 className='text-white font-bold'>Important Links</h1>
+                                    {['Home', 'KYC', 'Policy', 'Payment to VLS', 'Contact Us'].map((item, index) => (
+                                        <div key={index} className="flex items-center gap-2 group">
+                                            <span className="text-[#e31e24] opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all">›</span>
+                                            <a href="#" className="text-white border-b-[1px] pb-2 w-full border-gray-800 font-bold hover:text-gray-300 transition-transform group-hover:translate-x-1">
+                                                {item}
+                                            </a>
+                                        </div>
+                                    ))}
+                                </nav>
+                            </div>
+
+                            {/* Registered Office */}
+                            <div>
+                                <h3 className=" text-white font-bold mb-5">Registered Office :</h3>
+                                <div className="space-y-4">
+                                    <div className="flex items-start gap-2">
+                                        <FaBuilding className="mt-1 text-gray-400" />
+                                        <p className="text-gray-400">
+                                            VLS Finance Ltd. Ground Floor, 90, Okhla Industrial Estate, Phase III, New Delhi – 110020
+                                        </p>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <FaPhone className="text-gray-400" />
+                                        <p className="text-gray-400">+91-011-46656666</p>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <FaFax className="text-gray-400" />
+                                        <p className="text-gray-400">+91-011-46656699</p>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <FaEnvelope className="text-gray-400" />
+                                        <a href="mailto:vls@vlsfinances.com" className="text-white underline hover:text-gray-300">
+                                            vls@vlsfinances.com
                                         </a>
                                     </div>
-                                ))}
-                            </nav>
-                        </div>
-
-                        {/* Registered Office */}
-                        <div >
-                            <h3 className=" text-white font-bold mb-5">Registered Office :</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-start gap-2">
-                                    <FaBuilding className="mt-1 text-gray-400" />
-                                    <p className="text-gray-400">
-                                        VLS Finance Ltd. Ground Floor, 90, Okhla Industrial Estate, Phase III, New Delhi – 110020
-                                    </p>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <FaPhone className="text-gray-400" />
-                                    <p className="text-gray-400">+91-011-46656666</p>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <FaFax className="text-gray-400" />
-                                    <p className="text-gray-400">+91-011-46656699</p>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <FaEnvelope className="text-gray-400" />
-                                    <a href="mailto:vls@vlsfinances.com" className="text-white underline hover:text-gray-300">
-                                        vls@vlsfinances.com
-                                    </a>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
 
                     {/* Bottom copyright bar */}
